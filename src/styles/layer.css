@@ -87,3 +87,97 @@ button:hover {
     background-color: #8da1ce;
     transform: scale(1.1);
 }
+
+/*--------------------------------------MOBILE-------------*/
+@media (max-width: 1000px){
+    .imageCellLayer {
+        position: fixed;
+        top: 0;
+        left: 34%;
+    
+        width: 40%;
+    }
+    
+    .layerExit{
+        position: fixed;
+        z-index: 2;
+        top: 93%;
+        left: 50%;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        border: none;
+        background-color: rgb(0, 0, 0);
+        border-radius: 34px;
+        transition: ease 0.5s;
+    }
+    .layerExit:hover{
+        transform: rotate(90deg)
+    }
+    
+    .layer {
+        position: fixed;
+        top: 5%;
+        left: 10%;
+        width: 80%;
+        height: 90%;
+        background: linear-gradient(to bottom, #ffffff, #25242e);
+        border-radius: 38px;
+        border-color: #000000;
+        border-style: groove;
+        overflow-y:  scroll;
+        overflow-x: hidden;
+    }
+    
+    .closeLayer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        transition: ease 0.5s;
+    }
+    
+    .imageLayer {
+    
+        margin: 5px;
+        max-width: 95%;
+        border-radius: 18px;
+    
+    }
+    
+    .layer::-webkit-scrollbar {
+        display: none; /* Para navegadores baseados em WebKit */
+    }
+    
+    .layerText {
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    
+    }
+    
+    .layerTextButton {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 8px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 2px 1px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: ease 0.5s;
+    }
+    
+    button:hover {
+        background-color: #8da1ce;
+        transform: scale(1.1);
+    }
+    
+}

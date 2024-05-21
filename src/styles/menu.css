@@ -1,43 +1,83 @@
 .menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 50);
+  padding: 30px;
+  user-select: none;
+
+
+}
+
+.menu button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  float: right;
+  margin-right: 180px;
+  cursor: pointer;
+  transition: color 0.6s ease;
+}
+
+.menu button:hover {
+  color: #ffee00;
+}
+
+/* Imgs */
+.imageMenu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 20px;
+  background-color: rgb(0, 0, 50);
+}
+
+.countryflag {
+  position: fixed;
+  top: 24px;
+  right: 130px;
+  max-height: 30px;
+  user-select: none;
+
+}
+
+/* Mobie------------------------------------------------------------------*/
+@media (max-width: 1000px) {
+
+  .menu {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: rgb(0, 0, 50);
-    padding: 30px;
+    padding: 12px;
     user-select: none;
-
-
   }
-  
+
+
+  .imageMenu {
+    display: none;
+  }
+
+
   .menu button {
     background-color: transparent;
     border: none;
     color: white;
-    font-size: 18px;
-    float: right;
-    margin-right: 180px;
+    font-size: 16px;
+    margin-right: 36px;
     cursor: pointer;
     transition: color 0.6s ease;
   }
-  
-  .menu button:hover {
-    color: #ffee00;
+
+  .countryflag {
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-height: 44px;
+    user-select: none;
+
   }
 
-/* Imgs */
-.imageMenu{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    padding: 20px;
-    background-color:  rgb(0, 0, 50);
-}
 
-.countryflag{
-    position: fixed;
-    top: 24px;
-    right: 130px;
-    max-height: 30px;
-    user-select: none;
-    
 }

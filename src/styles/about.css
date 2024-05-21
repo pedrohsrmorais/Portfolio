@@ -1,4 +1,4 @@
-.content{
+.content {
     margin-top: 150px;
     font-family: 'Arial', 'Arial Narrow', Arial, sans-serif;
     font-weight: 300;
@@ -9,4 +9,20 @@
     text-align: justify;
     color: rgb(0, 0, 50);
 
+}
+
+@media (max-width: 1000px) {
+
+    .content {
+        margin-top: 100px;
+        font-family: 'Arial', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 300;
+        text-align: center;
+        max-width: 90%;
+        margin-left: 5%;
+        font-size: 14px;
+        text-align: justify;
+        color: rgb(0, 0, 20);
+
+    }
 }
