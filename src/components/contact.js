@@ -1,79 +1,24 @@
-import React, { useState } from 'react';
-
+import linkedin from '../imgs/logos/LinkedIn_logo.png';
+import github from '../imgs/logos/GitHub-logo.png';
 
 export default function Contact({ language }) {
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-
-        console.log('Nome:', name);
-        console.log('Email:', email);
-        console.log('Mensagem:', message);
-
-        setName('');
-        setEmail('');
-        setMessage('');
-    };
-
     return (
-        <div className="contact-form">
-            {language === 'english' ?
-                <h2>Contact me</h2>
-                :
-                <h2>Entre em Contato</h2>
+        <div className="contact" id='contact'>
+            {language === 'english'?
+            <h2>Contact me right now via LinkedIn or email!</h2>
+            :
+            <h2>Me contate agora mesmo por linkedin ou email!</h2>
             }
+            
 
-            <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    {language === 'english' ?
-                        <label htmlFor="name">Name:</label>
-                        :
-                        <label htmlFor="name">Nome:</label>
-                    }
+            <img src={linkedin} className='imagesLogos' alt='linkedinLogo' onClick={
+                () => { window.open("https://www.linkedin.com/in/pedro-henrique-morais-56008b204/", "_blank") }} />
 
-                    <input
-                        type="text"
-                        id="name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        required
-                    />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                </div>
-                <div className="form-group">
-                    {language === 'english' ?
-                        <label htmlFor="message">Messege:</label>
-                        :
-                        <label htmlFor="message">Mensagem:</label>
-                    }
+            <img src={github} className='imagesLogos' alt='linkedinLogo' onClick={
+                () => { window.open("https://github.com/pedrohsrmorais", "_blank") }
+            } />
 
-                    <textarea
-                        id="message"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        required
-                    ></textarea>
-                </div>
-                {language === 'english' ?
-                    <button type="submit">Submit</button>
-                    :
-                    <button type="submit">Enviar</button>
-                }
-
-            </form>
         </div>
     );
 }

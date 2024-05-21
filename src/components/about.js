@@ -3,6 +3,8 @@
 export default function About({ language }) {
     return (
         <div className="content">
+            <div id='about'></div>
+
 
             {language === 'english' ?
                 <>My name is Pedro Henrique. <br /> <br />
@@ -10,7 +12,7 @@ export default function About({ language }) {
                     Recently, I've uncovered a deep-seated passion for Data Science. This realization has prompted me to embark on a new path, where I'm actively pursuing specialization through comprehensive training at the DNC School. My ultimate aim is to immerse myself fully in the dynamic realm of technology, leveraging my analytical prowess to craft innovative solutions for diverse challenges. <br /> <br />
                     This multifaceted experience has not only broadened my expertise but also instilled in me a profound appreciation for versatility. I thrive in environments that demand agility, where I can seamlessly pivot between disciplines and leverage my eclectic background to tackle complex challenges from multiple angles.
                     My unwavering commitment to flexibility and adaptability underscores my eagerness to fully immerse myself in the technology landscape. I am driven by the opportunity to harness my diverse skill set and analytical acumen to engineer intelligent and creative solutions across a spectrum of domains.
-                </> 
+                </>
                 :
                 <>Meu nome é Pedro Henrique. <br /> <br />
                     Possuo uma licenciatura em Química pela UFRGS e um diploma de Tecnólogo em Análise e Desenvolvimento de Sistemas pela Uniritter. Minha jornada profissional foi marcada por experiências significativas em gestão comercial e, posteriormente, desenvolvimento de serviços web. Esses papéis enriqueceram profundamente minhas habilidades e contribuíram para meu crescimento profissional. <br /> <br />

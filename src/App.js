@@ -7,7 +7,8 @@ import './styles/body.css';
 import './styles/menu.css';
 import './styles/about.css';
 import './styles/projects.css';
-import './styles/contact.css'
+import './styles/contact.css';
+import './styles/layer.css';
 
 // Components
 import Menu from './components/menu';
@@ -34,6 +35,7 @@ export default function App() {
 
             <About language={language} />
 
+            <div id='projects'></div>
             <Projects language={language} />
 
             <Contact language={language} />
