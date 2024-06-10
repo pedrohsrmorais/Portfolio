@@ -6,6 +6,7 @@ import BR from 'country-flag-icons/react/3x2/BR';
 import './styles/body.css';
 import './styles/menu.css';
 import './styles/about.css';
+import './styles/formation.css';
 import './styles/projects.css';
 import './styles/contact.css';
 import './styles/layer.css';
@@ -15,6 +16,7 @@ import Menu from './components/menu';
 import About from './components/about';
 import Projects from './components/projects';
 import Contact from './components/contact';
+import Formation from './components/formation';
 
 export default function App() {
     const [language, setLanguage] = useState('english');
@@ -23,6 +25,7 @@ export default function App() {
 
         setLanguage(language === 'english' ? 'portuguese' : 'english');
     };
+
 
     return (
         <div>
@@ -35,10 +38,14 @@ export default function App() {
 
             <About language={language} />
 
+            <Formation language={language} />
+
             <div id='projects'></div>
             <Projects language={language} />
 
             <Contact language={language} />
+
+
 
         </div>
     );

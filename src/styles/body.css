@@ -1,15 +1,46 @@
-body,html{
+@keyframes init {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes initFlag{
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+        padding: 5px;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        padding: 0;
+        transform: scale(0.9);
+    }
+}
+
+
+body,html {
     margin: 0;
     padding: 0;
 }
-  
-#about{
+
+#about {
     position: absolute;
     top: 0;
 }
 
-#projects{
-    transform: translate(0,60px);
+#projects {
+    transform: translate(0, 60px);
 }
 
 ::-webkit-scrollbar {

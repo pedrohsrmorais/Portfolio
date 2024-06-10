@@ -1,4 +1,4 @@
-.content {
+.formationDiv{
     margin-top: 110px;
     font-family: 'Arial', 'Arial Narrow', Arial, sans-serif;
     font-weight: 300;
@@ -14,21 +14,6 @@
     border-bottom-style: dashed; 
     border-bottom-color: rgba(160, 160, 160, 0.80);
     
+    height: 600px;
     animation: init 2.5s ease forwards;
-}
-
-@media (max-width: 1000px) {
-
-    .content {
-        margin-top: 100px;
-        font-family: 'Arial', 'Arial Narrow', Arial, sans-serif;
-        font-weight: 300;
-        text-align: center;
-        max-width: 90%;
-        margin-left: 5%;
-        font-size: 14px;
-        text-align: justify;
-        color: rgb(0, 0, 20);
-
-    }
 }
